@@ -1,4 +1,7 @@
 // divide and merge
+// O(n) = nlogn
+// extra space = O(n)
+
 #include <bits/stdc++.h>
 using namespace std;
 
