@@ -28,7 +28,7 @@ void merge(vector<int> &v, int low, int mid, int high)
         left++;
     }
 
-    while (right <= mid)
+    while (right <= high)
     {
         temp.push_back(v[right]);
         right++;
@@ -45,7 +45,7 @@ void mergeSort(vector<int> &v, int low, int high){
     if(low >= high)
         return;
     
-    int mid = low + (high-low)/2;
+    int mid = low + (high - low)/2;
     mergeSort(v,low,mid);
     mergeSort(v,mid+1,high);
     merge(v,low,mid,high);
